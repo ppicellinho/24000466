@@ -1,1 +1,24 @@
+#include<stdlib.h>
+#include<stdio.h>
+
+
+int main(){
+    int t;
+    printf("DIGITE A TEMPERATURA DO LABORATORIO EM GRAUS CELSIUS COMO UM NUMERO INTEIRO: ",t);
+    scanf("%i",&t);
+
+   while(t<=20){
+    printf("TEMPERATURA ABAIXO DO LIMITE, AQUECENDO LABORATORIO: %i \n",t);
+    t=t+1;
+   }
+   while(t>=25){
+    printf("TEMPERATURA ACIMA DO LIMITE, ESFRIANDO LABORATORIO: %i \n",t);
+    t=t-1;
+   }
+   if(20<=t<=25){
+    printf("Temperatura na faixa aceita");
+   }
+
+
+return 0;}
 
