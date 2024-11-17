@@ -1,0 +1,17 @@
+#include<stdlib.h>
+#include<stdio.h>
+int main(){
+    float i;
+    while(1){
+       printf("Escreva o quanto de gasolina tem no carro, em litros: ");//um carro tem em media 55 litros por tanque, 15% de 55 = 27.5
+    scanf("%f",&i);
+    if(i<27.5){
+          printf("%f\ntanque abaixo do recomendado, abasteca.\n",i);
+          }
+    else{
+        printf("\ntanque em um nivel suficiente. ");
+        break;
+        }
+}
+return 0;
+}
