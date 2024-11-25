@@ -3,15 +3,15 @@
 
 int main(){
     int opcao;
-    printf("Controle de Atuação do Robô\n");
-    printf("Escolha uma das seguintes ações para o robô realizar:\n1-ligar uma lampada\n2-tocar som\n3-mexer o braco\n4-encerrar acoes\n");
+    printf("Acoes do robo\n");
+    printf("Escolha uma das seguintes açoes para o robo realizar:\n1-ligar uma lampada\n2-tocar som\n3-mexer o braco\n4-encerrar acoes\n");
 
     do{
-        printf("\nDigite o numero da ação: ");
+        printf("\ndigite o numero da acao: ");
         scanf("%d", &opcao);
         switch (opcao){
         case 1:
-            printf("O robo ligou a lâmpada.\n");
+            printf("O robo ligou a lampada.\n");
             break;
         case 2:
             printf("O robo tocou um som.\n");
@@ -23,7 +23,7 @@ int main(){
             printf("Programa encerrado\n");
             break;
         default:
-            printf("Opção inválida! Por favor, selecione uma ação válida.\n");
+            printf("opcao inexistente\n");
         }
         while(opcao !=4);
         printf("Programa encerrado.\n");
