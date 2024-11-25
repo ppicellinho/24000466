@@ -1,0 +1,1 @@
+o comando random(0,100) gera valores aleatórios de 1 ate 99, e o vetor randomValues[5] é preenchido com os valores gerados pelo comando.
