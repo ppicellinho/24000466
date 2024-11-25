@@ -1,1 +1,28 @@
+#include<stdlib.h>
+#include<stdio.h>
+int main(){
+    char comando;
+    char sair;
+    printf("movimente o robo apertando as seguintes teclas \n'w' anda pra frente\n's' anda para tras\n'd' anda para direita\n'a' anda para a esquerda\n e o comando 'sair' encerra o movimento");
+    do{
+        switch(comando){
+        case'w':
+            printf("andou para frente");
+            break;
+        case's':
+            printf("andou para tras");
+            break;
+        case'a':
+            printf("andou para esquerda");
+            break;
+        case'd':
+            printf("andou para direita");
+            break;
+            default:;
+        }
 
+
+
+        }while(comando!=sair);
+       return 0;
+    }
