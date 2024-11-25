@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    int x =2, y =2;
+    char comando;
+
+    printf("Simulação de Navegação Autônoma\n'a' esquerda\n's' baixo\n'd' direita\n'w' baixo\n'q' sair da simulacao");
+    do {
+        printf("\nposicao inicial: (%d, %d)\n", x, y);
+        printf("Insira um comando: ");
+        scanf("%c",&comando);
+        switch(comando){
+            case 'w':
+                if(y >0) y--;
+                else printf("Fora do grid");
+                break;
+            case 's':
+                if(y <4) y++;
+                else printf("Fora do grid");
+                break;
+            case 'a':
+                if(x >0) x--;
+                else printf("Fora do grid");
+                break;
+            case 'd':
+                if(x <4) x++;
+                else printf("Fora do grid");
+                break;
+            case 'q':
+                printf("Finalizando simulacao");
+                break;
+            default:;
+                printf("COMANDO ERRADO DIGITE APENAS OS COMANDO 'W' 'A' 'S' 'D' OU 'Q' \n");
+                }
+    }while(comando !='q');
+    return 0;
+    }
