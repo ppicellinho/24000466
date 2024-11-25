@@ -1,3 +1,7 @@
+a) A primeira linha da matriz contém temperaturas registradas em 5 momentos.
+b) 40,4%.
+c) O valor máximo é de 420 ppm.
+d)
 int ambientData[3][5]={ 
   {22,25,23,21,24},
   {45,38,42,40,37},
