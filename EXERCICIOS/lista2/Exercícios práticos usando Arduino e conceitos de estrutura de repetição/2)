@@ -1,0 +1,1 @@
+Com o comando cameraData[3]=analogRead(A1) estamos acessando a informação na posição 3 índice 4 com a informação que sai do pino A1 do arduíno.
