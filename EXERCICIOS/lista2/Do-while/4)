@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int nivel_bateria = 15;
+    printf("Iniciando monitoramento da bateria\n");
+    do {
+        printf("BATERIA EM BAIXO NIVEL %d%\n", nivel_bateria);
+        nivel_bateria += 3;
+    } while (nivel_bateria <20);
+    printf("Bateria em nível seguro: %d%.", nivel_bateria);
+
+    return 0;
+}
