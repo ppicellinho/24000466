@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main() {
+    int passos, totalPassos = 0;
+    int meta = 10000;
+    printf("meta diaria: %d passos\n\n", meta);
+
+    while(totalPassos < meta){
+        printf("Digite o numero de passos dados (0 ENCCERRA O PROGRAMA): ");
+        scanf("%d", &passos);
+
+    if (passos <=0){
+        printf("CONTADOR ENCERRADO");
+        }
+        totalPassos += passos;
+        printf("Passos totais: %d\n", totalPassos);
+
+    if(totalPassos >=meta){
+            printf("\nvoce chegou na meta de passos %d\n", meta);
+    }else{
+        printf("restam %d passos para atingir a meta.\n", meta - totalPassos);
+        }
+    }
+    return 0;
+    }
